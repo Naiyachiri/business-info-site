@@ -1,18 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './styles/App.css';
+import './styles/responsive.css';
+
+import Nav from './views/Nav';
+import Main from './views/Main';
+import Footer from './views/Footer';
 
 class App extends Component {
+
+  state = {
+    location: "home" // stores the location of the app so the main can render properly
+  }
+
+  changeLocation = (location) => { // handles link clicks
+    this.setState({
+      location
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="home">
+        <Nav changeLocation={this.changeLocation}/>
+        <Main 
+          location={this.state.location}
+          changeLocation={this.changeLocation}
+          />
+        <Footer />
       </div>
     );
   }
