@@ -107,6 +107,8 @@ main {
 #photos p {
   background-color: black;
   color: white;
+  font-family: 'Srisakdi', Arial, cursive;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -120,4 +122,18 @@ heading {
 
 .inline-link {
   color: pink;
+}
+
+#map {
+  height: 74vh; /*NOTE: the map requires an absolute size value; using % values will cause it to not render */
+  width: 100vw;
+  z-index: 0;
+}
+
+.info-window {
+  color: black;
+}
+
+.locations-details {
+  text-align: center;
 }
