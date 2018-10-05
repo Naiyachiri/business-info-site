@@ -58,12 +58,14 @@ body,
   min-width: 15vw;
   overflow: hidden;
   padding: 0.25em;
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
+  text-shadow: 2px 2px 2px rgb(253, 255, 152);
   transition: all 0.5s ease;
 }
 
 .business-logo-container:hover {
-  background-color: rgba(10, 0, 56, 0.664)
+  background-color: rgba(10, 0, 56, 0.664);
+  color: white;
+  text-shadow: 2px 2px 2px rgb(45, 1, 63);
 }
 
 #business-img {
@@ -137,3 +139,16 @@ heading {
 .locations-details {
   text-align: center;
 }
+
+.price-container {
+  height: 82vh;
+}
+
+.price-container h5 {
+  margin: 0;
+}
+
+.price-container ul {
+  margin: 0
+}
+
