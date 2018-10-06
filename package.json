@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.1.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5"
   },
+  "homepage": "https://naiyachiri.github.io/business-info-site",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
