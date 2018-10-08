@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home.js'
 import About from './About.js'
@@ -63,34 +64,18 @@ class Main extends React.Component {
   }
 
   render() {
-
-    if (this.props.location === 'home') {
-      return (
-        <main>
-          <Home />
-        </main>
-      )
-    } else if (this.props.location === 'about') {
-      return (
-        <main>
-          <About 
-          changeLocation={this.props.changeLocation}/>
-        </main>
-      )
-    } else if (this.props.location === 'location') {
-      return (
-        <main>
-          <Location 
-          initMap={this.initMap}/>
-        </main>
-      )
-    } else {
-      return (
-        <main>
-          <Price />
-        </main>
-      )
-    }
+    return(
+      <Switch>
+      <Route exact path='/' render={(props) => (
+      <Home {...props} />)} />
+      <Route  path='/about' render={(props) => (
+      <About {...props} />)} />
+      <Route  path='/location' render={(props) => (
+      <Location {...props} initMap={this.loadMap}/>)} />
+      <Route  path='/price' render={(props) => (
+      <Price {...props} />)} />
+    </Switch>
+    )
   }
 }
 

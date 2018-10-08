@@ -5,10 +5,16 @@ import React from 'react';
 export default class Location extends React.Component {
 
   componentDidMount() {
-    this.props.initMap();
+    if (window.google !== undefined) {
+      this.props.initMap();
+      
+    } else { // note by setting a timeout the init map will be called again in 1 second if the map has not loaded yet
+      setTimeout(this.props.initMap(), 1000)
+    }
+    
   }
   render() {
-
+    
     return (
       <div className="locations-container"> 
       <div className="locations-details">

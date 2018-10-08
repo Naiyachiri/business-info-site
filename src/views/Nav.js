@@ -1,26 +1,19 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import BusinessLogo from './BusinessLogo';
 
 class Nav extends React.Component {
   
-
-  handleLinkClick = (event) => {
-    event.preventDefault();
-    let linkVal = event.target.getAttribute('value'); // gets the link value so that location changes
-    this.props.changeLocation(linkVal); // change location to the clicked link
-  }
-
   render() {
 
     return (
       <nav className="top-nav">
         <BusinessLogo />
           <div class="flex">
-            <a href="/" className="nav-item" value="home" onClick={this.handleLinkClick}> Home </a>
-            <a href="/about" className="nav-item" value="about" onClick={this.handleLinkClick}> About </a>
-            <a href="/location" className="nav-item" value="location" onClick={this.handleLinkClick}> Location </a>
-            <a href="/price" className="nav-item" value="price" onClick={this.handleLinkClick}> Price </a>
+            <Link to={{ pathname: '/'}}><p className="nav-item" value="home"> Home </p></Link>
+            <Link to={{ pathname: '/about'}}><p className="nav-item" value="about"> About </p></Link>
+            <Link to={{ pathname: '/location'}}><p className="nav-item" value="location"> Location </p></Link>
+            <Link to={{ pathname: '/price'}}><p className="nav-item" value="price"> Price </p></Link>
           </div>
       </nav>
     )
