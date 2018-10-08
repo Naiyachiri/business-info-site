@@ -11,7 +11,7 @@
 
 ## to publish new changes
 
-run `npm deploy`
+run `npm run deploy`
 
 ### Used Libaries and APIs
 

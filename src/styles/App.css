@@ -11,6 +11,7 @@ body,
 }
 
 .top-nav {
+  align-items: center;
   display: flex;
   background-image: linear-gradient(to right, rgb(105, 0, 167), rgb(230, 233, 81));
   text-align: center;
@@ -21,21 +22,33 @@ body,
 
 .flex {
   display: flex;
-  width: 100vw;
+  width: 60vw;
+}
+
+.nav-list {
+  justify-content: space-between;
+  max-width: 100vw;
+}
+
+.nav-list a,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
 .nav-item {
-  border-radius: 20%;
+  border-radius: 50%;
   color: white;
   display: flex;
+  flex-grow: 1;
   font-family: 'Charmonman', 'Srisakdi', 'Arial', cursive;
   font-size: 2em;
   height: 70px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 0.25em;
-  min-width: 15vw;
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
   transition: all 0.5s ease;
 }
