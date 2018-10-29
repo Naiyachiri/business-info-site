@@ -7,7 +7,7 @@ export default class Price extends React.Component {
       <div className='price-container'>
         <h1>Hollywood Nails</h1>
         <span> Premiere Nail Salon for Men and woman </span>
-        <div style={{width: '200px', height: '100px', backgroundColor: 'white', textAlign: 'center'}}> some kind of image</div>
+        <hr style={{width: '200px', height: 'auto', backgroundColor: 'white'}}></hr>
         <p>LOCATED IN PATRICK HENRY MALL</p>
         <p>12300 Jefferson Ave, Unit 422</p>
         <p>Newport News, VA 23602</p>

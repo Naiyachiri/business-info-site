@@ -30,3 +30,5 @@ Google Maps JS API
 Responsive Design
 Flexbox
 Asynchronous script loading
+
+#### TODO/ Improvements
