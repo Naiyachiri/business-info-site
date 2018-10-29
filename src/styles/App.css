@@ -16,7 +16,7 @@ body,
   background-image: linear-gradient(to right, rgb(105, 0, 167), rgb(230, 233, 81));
   text-align: center;
   justify-content: space-around;
-  height: auto;
+  height: 100px;
   width: 100vw;
 }
 

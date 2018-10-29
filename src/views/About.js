@@ -1,12 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default class About extends React.Component {
-
-  handleLinkClick = (event) => {
-    event.preventDefault();
-    let linkVal = event.target.getAttribute('value'); // gets the link value so that location changes
-    this.props.changeLocation(linkVal); // change location to the clicked link
-  }
 
   render() {
     
@@ -25,7 +21,7 @@ export default class About extends React.Component {
         <p>Saturday: 10-9</p>
         <p>Sunday: 12-6:30</p>
 
-        <p>Our services include Nails, Skin and Lashes. For additional details go to our <a href="/prices" value="price" onClick={this.handleLinkClick} className="inline-link">Prices</a> Page</p>
+        <p>Our services include Nails, Skin and Lashes. For additional details go to our <Link to={{ pathname: '/price'}}>Price</Link> Page</p>
       
 
       </div>
