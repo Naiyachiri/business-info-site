@@ -68,7 +68,7 @@ class Main extends React.Component {
       <Switch>
       <Route exact path='/' render={(props) => (
       <Home {...props} />)} />
-      <Route exact path='/info-business-site' render={(props) => (
+      <Route exact path='/business-info-site' render={(props) => (
       <Home {...props} />)} />
       <Route  path='/about' render={(props) => (
       <About {...props} />)} />
