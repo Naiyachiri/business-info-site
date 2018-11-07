@@ -31,4 +31,6 @@ Responsive Design
 Flexbox
 Asynchronous script loading
 
+use of `rel="noopener noreferrer"` in order to prevent sucirt issues with opening new tabs with `target='_blank'`
+
 #### TODO/ Improvements
