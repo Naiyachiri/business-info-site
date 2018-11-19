@@ -15,7 +15,6 @@ class App extends Component {
       <div className="home">
         <Nav changeLocation={this.changeLocation}/>
         <Main />
-        <Footer />
       </div>
     );
   }
